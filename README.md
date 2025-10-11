@@ -2,7 +2,9 @@
 
 # Consuming CrowdStrike CSPM API
 
-- 
+- Below is classic OAuth2-style workflow used by many enterprise APIs, including CrowdStrike’s.
+
+  
 - 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM a
   Note: Ensure the API key has the right scope of permissions for certain API endpoints
   - You will then get a client ID + client secret
