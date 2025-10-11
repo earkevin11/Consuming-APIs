@@ -1,6 +1,8 @@
-# Consuming-APIs
+# API authentication and consumption
 
-- Consuming CrowdStrike CSPM API
+# Consuming CrowdStrike CSPM API
+
+- 
 - 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM a
   Note: Ensure the API key has the right scope of permissions for certain API endpoints
   - You will then get a client ID + client secret
