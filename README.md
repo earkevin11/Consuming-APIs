@@ -17,7 +17,9 @@
 - 🧾 2. Requesting an Access Token (Authentication)
   - You then take the client secret + client ID and put them in a API client like Postman and then make a POST request to get an access token.
   - POST https://api.crowdstrike.com/oauth2/token
-  - Content-Type: application/x-www-form-urlencoded
+  - Headers should contain Content-Type: application/x-www-form-urlencoded
+  - <img width="1140" height="293" alt="image" src="https://github.com/user-attachments/assets/8408cd08-18a9-4c5d-9983-2070d311f05f" />
+
   - Body should contain client_id=<your_client_id> & client_secret=<your_client_secret> and grant_type = client_credentials
   - <img width="958" height="299" alt="image" src="https://github.com/user-attachments/assets/04d67d90-90f0-4b74-b571-8804e54552e4" />
 
