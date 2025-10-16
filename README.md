@@ -18,7 +18,9 @@
   - You then take the client secret + client ID and put them in a API client like Postman and then make a POST request to get an access token.
   - POST https://api.crowdstrike.com/oauth2/token
   - Content-Type: application/x-www-form-urlencoded
-  - client_id=<your_client_id>&client_secret=<your_client_secret>
+  - Body should contain client_id=<your_client_id> & client_secret=<your_client_secret> and grant_type = client_credentials
+  - <img width="958" height="299" alt="image" src="https://github.com/user-attachments/assets/04d67d90-90f0-4b74-b571-8804e54552e4" />
+
   Note: The API returns a Bearer token (access token) — typically valid for 30 minutes or so.
 
  
