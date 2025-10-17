@@ -16,7 +16,7 @@
   
 - 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM 
   - Note: Ensure the API key has right scope of permissions for certain API endpoints
-  - 1. Create the API key in Falcon tool and ensure defined scopes/permissions are met based on CSPM API endpoint.
+  - 1. Create the API key in Falcon tool with required scopes/permissions based on CSPM API endpoint.
   - - You can find required permissions in the API documentation
   - API key will have client ID + client secret. Store in a secure place like Key Vault.
   - API key act as credentials for your request to the API endpoint (sort of like a username/password pair for authentication).
