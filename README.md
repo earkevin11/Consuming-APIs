@@ -11,7 +11,7 @@
 
 - Below is classic OAuth2-style workflow used by many enterprise APIs, including CrowdStrike’s.
 # Important: 
-- Each API endpoint will require an API key you use to get an access token during a post request. These API keys will require different scope of permissions like read/write.
+- Each API endpoint will require an API key you use to get an access token during a post request. 
 
   
 - 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM 
