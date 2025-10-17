@@ -1,0 +1,35 @@
+import json
+import pandas as pd
+import glob
+
+# List all JSON files in a folder (change path as needed)
+json_files = glob.glob('/Users/n664768/PycharmProjects/PythonProject/aws_json_security_policies/*.json')
+
+# List to hold all extracted data from multiple files
+all_extracted_data = []
+
+# Process each JSON file
+for file_path in json_files:
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Assuming 'resources' is the key containing the list in each JSON file
+    if 'resources' in data:
+        resources = data['resources']
+        for resource in resources:
+            if isinstance(resource, dict):  # Ensure resource is a dictionary
+                all_extracted_data.append({
+                 "cloud_service_friendly": resource.get("cloud_service_friendly"),
+                 "policy_id": resource.get("policy_id"),
+                 "name": resource.get("name"),
+                 "default_severity": resource.get("default_severity"),
+                 "policy_type": resource.get("policy_type"),
+                })
+
+# Create a DataFrame from all the extracted data
+df = pd.DataFrame(all_extracted_data)
+
+# Write the DataFrame to an Excel file
+df.to_excel('aws_combined_resources.xlsx', index=False, engine='openpyxl')
+
+print("Data from all files successfully written to 'aws_combined_resources.xlsx'.")
