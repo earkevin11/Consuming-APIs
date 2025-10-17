@@ -14,7 +14,7 @@
 - Each API endpoint will require an API key you use to get an access token during a post request. 
 
   
-- 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM 
+# Step 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM 
   - Note: Ensure the API key has right scope of permissions for certain API endpoints
   - 1. Create the API key in Falcon tool with required scopes/permissions based on CSPM API endpoint.
   - - You can find required permissions in the API documentation
@@ -24,7 +24,7 @@
   - <img width="520" height="103" alt="image" src="https://github.com/user-attachments/assets/79a2c4c0-f7e1-414f-860a-001da688ccea" />
 
  
-- 🧾 2. Requesting an Access Token (Authentication)
+# Step 2. 🧾 Requesting an Access Token (Authentication)
   - Before you make the POST to URL https://api.crowdstrike.com/oauth2/token , ensure headers and body are correct
   - Headers should contain Content-Type: application/x-www-form-urlencoded
   - <img width="1140" height="293" alt="image" src="https://github.com/user-attachments/assets/8408cd08-18a9-4c5d-9983-2070d311f05f" />
@@ -40,7 +40,7 @@
   Note: The API returns a Bearer token (access token) — typically valid for 30 minutes or so. You will have to request it again once it expires.
 
  
-- ⚙️ 3. Making Authenticated API Requests
+# Step 3. ⚙️ Making Authenticated API Requests
   - Once you have the bearer token (access token), you include it in the Authorization header of your next requests:
   - That is how you authenticate and prove who you say you are to the API endpoint.
   - GET "https://api.crowdstrike.com/settings/entities/policy/v1?service=Detective"
@@ -52,7 +52,7 @@
     - <img width="1279" height="839" alt="image" src="https://github.com/user-attachments/assets/808afcfd-56d4-4847-aebb-12677770d767" />
 
 
-- 4. Save the file and clean it with Python
+# Step 4. Save the file and clean it with Python
   
 Python code that will take ALL the json files in that directory/folder (aws_json_security_policies) and combine them into an excel file called aws_combined_resources.xlsx
 #Important: Make sure you saved all of json files and moved it to the directory/folder so the Python script can go through each json file and add it to the excel file
