@@ -50,48 +50,9 @@
 
 
 - 4. Save the file and clean it with Python
-     <img width="1275" height="683" alt="image" src="https://github.com/user-attachments/assets/79dd06bb-5b69-489b-b8dc-7254c247d2d0" />
+  
+Python code that will take ALL the json files in that directory/folder (aws_json_security_policies) and combine them into an excel file called aws_combined_resources.xlsx
+#Important: Make sure you saved all of json files and moved it to the directory/folder so the Python script can go through each json file and add it to the excel file
 
-
-     Python code that will take ALL the json files in that directory/folder (aws_json_security_policies) and combine them into an excel file called aws_combined_resources.xlsx
+ <img width="1275" height="683" alt="image" src="https://github.com/user-attachments/assets/79dd06bb-5b69-489b-b8dc-7254c247d2d0" />
      
-import json
-import pandas as pd
-import glob
-
-# List all JSON files in a folder (change path as needed)
-json_files = glob.glob('/Users/n664768/PycharmProjects/PythonProject/aws_json_security_policies/*.json')
-
-# List to hold all extracted data from multiple files
-all_extracted_data = []
-
-# Process each JSON file
-for file_path in json_files:
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-
-    # Assuming 'resources' is the key containing the list in each JSON file
-    if 'resources' in data:
-        resources = data['resources']
-        for resource in resources:
-            if isinstance(resource, dict):  # Ensure resource is a dictionary
-                all_extracted_data.append({
-                 "cloud_service_friendly": resource.get("cloud_service_friendly"),
-                 "policy_id": resource.get("policy_id"),
-                 "name": resource.get("name"),
-                 "default_severity": resource.get("default_severity"),
-                 "policy_type": resource.get("policy_type"),
-                })
-
-# Create a DataFrame from all the extracted data
-df = pd.DataFrame(all_extracted_data)
-
-# Write the DataFrame to an Excel file
-df.to_excel('aws_combined_resources.xlsx', index=False, engine='openpyxl')
-
-print("Data from all files successfully written to 'aws_combined_resources.xlsx'.")
-
-
-
-
-
