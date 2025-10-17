@@ -17,8 +17,8 @@
 
 
   
-- 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM a
-  Note: Ensure the API key has the right scope of permissions for certain API endpoints
+- 1. 🔑 Creating the API Key / Client Credentials in Falcon CSPM 
+  - Note: Ensure the API key has the right scope of permissions for certain API endpoints
   - You will then get a client ID + client secret
   - These act as credentials for your application (sort of like a username/password pair for automation).
   - Confirm you assigned it the right scopes or permissions — that’s key because CrowdStrike’s API is granular (e.g. read-only for detections, full access for configurations, etc.).
