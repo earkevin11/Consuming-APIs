@@ -14,6 +14,10 @@
   - You will then get a client ID + client secret
   - These act as credentials for your application (sort of like a username/password pair for automation).
   - Confirm you assigned it the right scopes or permissions — that’s key because CrowdStrike’s API is granular (e.g. read-only for detections, full access for configurations, etc.).
+  - Read Only permissions have been assigned to this specific API key and it's required to make GET requests to the URL: "https://api.crowdstrike.com/settings/entities/policy/v1?service=" to retrieve CrowdStrike security policies by service
+  
+  - <img width="520" height="103" alt="image" src="https://github.com/user-attachments/assets/79a2c4c0-f7e1-414f-860a-001da688ccea" />
+
  
 - 🧾 2. Requesting an Access Token (Authentication)
   - You then take the client secret + client ID and put them in a API client like Postman and then make a POST request to get an access token.
