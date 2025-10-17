@@ -29,7 +29,10 @@
   - Headers should contain Content-Type: application/x-www-form-urlencoded
   - <img width="1140" height="293" alt="image" src="https://github.com/user-attachments/assets/8408cd08-18a9-4c5d-9983-2070d311f05f" />
 
-  - Body should contain client_id=<your_client_id> & client_secret=<your_client_secret> and grant_type = client_credentials
+  - Body should contain:
+  - - client_id=<your_client_id>
+  - - client_secret=<your_client_secret>
+  - - grant_type = client_credentials
 <img width="1279" height="817" alt="image" src="https://github.com/user-attachments/assets/aeeb6b2b-e8be-4757-9088-1175c2944e88" />
 
   - As shown above screenshot, when you make the POST API request with your API key to url https://api.crowdstrike.com/oauth2/token, you will retrieve an access token aka bearer token
