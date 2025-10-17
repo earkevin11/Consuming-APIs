@@ -1,6 +1,13 @@
 # API authentication and consumption
 
-# Consuming CrowdStrike CSPM API
+# Consuming CrowdStrike CSPM Oauth2 based API
+
+# Import: The CrowdStrike API uses OAuth2 for authentication.
+
+- OAuth2 enables you to do the following:
+- Use access tokens to make API requests
+- Manage multiple API clients within your organization
+- Define limited scopes of permissions for API functionality
 
 - Below is classic OAuth2-style workflow used by many enterprise APIs, including CrowdStrike’s.
 - Important: Each API endpoint may require an API key you use to get an access token during a post request to have different scope of permissions like read/write.
