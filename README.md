@@ -41,10 +41,9 @@
   - Once you have the bearer token (access token), you include it in the Authorization header of your next requests:
   - That is how you authenticate and prove who you say you are to the API endpoint.
   - GET "https://api.crowdstrike.com/settings/entities/policy/v1?service=Detective"
-  - - Authorization: Bearer <access_token>
-  - - I am making a GET API request to the CSPM API to retrieve a list of all policies pertaining to the service "Detective"
+  - Authorization: Bearer <access_token>
+  - I am making a GET API request to the CSPM API to retrieve a list of all policies pertaining to the service "Detective"
     -   <img width="1302" height="582" alt="image" src="https://github.com/user-attachments/assets/e0120bcc-af10-4334-96d3-e2d605979a88" />
-    
     - If I want to get another list of policies for a different service, I modify the url to be "S3"
     - Example: "https://api.crowdstrike.com/settings/entities/policy/v1?service=S3"
     - <img width="1279" height="839" alt="image" src="https://github.com/user-attachments/assets/808afcfd-56d4-4847-aebb-12677770d767" />
