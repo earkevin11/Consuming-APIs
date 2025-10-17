@@ -12,6 +12,7 @@
 - Below is classic OAuth2-style workflow used by many enterprise APIs, including CrowdStrike’s.
 # Important: Each API endpoint may require an API key you use to get an access token during a post request. These API keys will require different scope of permissions like read/write.
 - URL for retrieving an access key with your API client secret and client ID
+- - https://api.crowdstrike.com/oauth2/token
 - POST with your API key to url https://api.crowdstrike.com/oauth2/token will require different permissions for API key.
 
 
