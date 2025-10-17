@@ -55,9 +55,11 @@
 # Step 4. Save the file and clean it with Python (uploaded Python script already)
   
 Python code that will take ALL the json files in that directory/folder (aws_json_security_policies) and combine them into an excel file called aws_combined_resources.xlsx
-#Important: Make sure you saved all of json files and moved it to the directory/folder so the Python script can go through each json file and add it to the excel file
+
 
  <img width="1275" height="683" alt="image" src="https://github.com/user-attachments/assets/79dd06bb-5b69-489b-b8dc-7254c247d2d0" />
+
+# Important: Make sure you saved all of json files and moved it to the directory/folder so the Python script can go through each json file and add it to the excel file
 
  <img width="521" height="811" alt="image" src="https://github.com/user-attachments/assets/e99d5e2a-7672-4592-be0c-8d8e87cab42c" />
 
